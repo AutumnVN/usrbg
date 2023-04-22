@@ -5,6 +5,7 @@ Hello Vencord user owo
 1. Join [Black Box Discord Server](https://discord.gg/TeRQEPb) and go to [#background-request](https://discord.com/channels/449175561529589761/645627516794699787/)
 
 2. Click **UPLOAD** button and **UPLOAD** your image from your device, **Only .GIF .PNG .JPG .JPEG will be accepted.**
+<br>(**NOT** link, **NOT** gif picker from discord, you must download the image and then **UPLOAD** it)
 <br>**DO NOT REQUEST Adult/NSFW content for your banners, this is against USRBG Terms of Service and will be rejected.**
 
 3. Wait for your background request to be approved, take a bit of time.
