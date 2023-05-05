@@ -1,8 +1,8 @@
-import { writeFileSync } from 'fs';
+import { writeFileSync, readFileSync, read } from 'fs';
 import fetch from 'node-fetch';
-import deadbanner from './deadbanner.json';
 
 const URL = 'https://raw.githubusercontent.com/Discord-Custom-Covers/usrbg/master/dist/usrbg.json';
+const deadbanner = JSON.parse(readFileSync('./deadbanner.json'));
 let usrbg = {};
 
 fetch(URL)
