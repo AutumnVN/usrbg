@@ -15,26 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Check out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v3
 
-    # Set up node.js
     - name: Set up node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '18'
 
-    # Install dependencies
-    - name: Install dependencies
-      run: |
-        npm install
-
-    # Generate a smaller USRBG json
     - name: Generate a smaller USRBG json
       run: |
         node index.js
 
-    # Commit all changed files to the repository
     - name: Commit to the repo
       run: |
         git config --global user.name "github-actions[bot]"
