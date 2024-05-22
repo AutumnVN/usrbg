@@ -15,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    - name: Set up node.js
-      uses: actions/setup-node@v3
+    - name: Set up Node.JS
+      uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: 18
 
-    - name: Generate a smaller USRBG json
+    - name: Generate a smaller USRBG JSON
       run: |
         node index.js
 
