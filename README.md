@@ -2,7 +2,7 @@ Hello Vencord user owo
 
 # How to request your own USRBG banner
 
-1. Join [Black Box Discord Server](https://discord.gg/TeRQEPb) and go to [#background-request](https://discord.com/channels/449175561529589761/645627516794699787/)
+1. Join [Black Box Discord Server](https://discord.gg/TeRQEPb) and go to [#click-here-to-request](https://discord.com/channels/449175561529589761/645627516794699787/)
 
 2. Click **UPLOAD** button and **UPLOAD** your image from your device, Only **.GIF .PNG .JPG .JPEG** will be accepted. Max-size: **10MB**
 <br>(**NOT** link, **NOT** gif picker from discord, you must download the image and then **UPLOAD** it)
