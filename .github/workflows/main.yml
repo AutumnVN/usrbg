@@ -22,6 +22,9 @@ jobs:
       with:
         node-version: 18
 
+    - name: Install Dependencies
+      run: npm i @actions/core mongodb fs-extra
+
     - name: Generate a smaller USRBG JSON
       run: |
         node index.js
@@ -31,5 +34,5 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add .
-        git commit -m 'Update USRBG files' || true
+        git commit -m 'Build USRBG' || true
         git push
