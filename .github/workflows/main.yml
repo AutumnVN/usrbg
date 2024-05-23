@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Install Dependencies
+        run: npm i fs-extra
+
       - name: Generate a smaller USRBG JSON
         run: |
           node index.js
