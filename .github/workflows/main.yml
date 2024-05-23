@@ -1,4 +1,4 @@
-name: USRBG
+name: Build USRBG
 
 on:
   push:
@@ -15,21 +15,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Set up node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
 
-    - name: Generate a smaller USRBG json
-      run: |
-        node index.js
+      - name: Generate a smaller USRBG JSON
+        run: |
+          node index.js
 
-    - name: Commit to the repo
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add .
-        git commit -m 'Update USRBG files' || true
-        git push
+      - name: Commit to the repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m 'Update USRBG files' || true
+          git push
