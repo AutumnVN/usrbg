@@ -1,4 +1,4 @@
-const { writeFileSync, readFileSync } = require('fs');
+const { writeFileSync, readFileSync } = require('fs-extra');
 
 const URL = 'https://raw.githubusercontent.com/Discord-Custom-Covers/usrbg/master/dist/usrbg.json';
 const deadbanner = JSON.parse(readFileSync('./deadbanner.json'));
